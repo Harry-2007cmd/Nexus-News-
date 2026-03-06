@@ -1,7 +1,7 @@
 // ===============================
 // CONFIG (newsdata.io)
 // ===============================
-const API_KEY = "pub_2e918269e8e04b2fbe61b0a1d22dc930";
+const API_KEY = "pub_e72aad5422f042a18fcbdc993f98e277";
 const BASE_URL = `https://newsdata.io/api/1/news?apikey=${API_KEY}&country=in&language=en`;
 
 // ===============================
@@ -61,7 +61,7 @@ async function fetchNews() {
     displayTrending(allArticles);
     displayHero(allArticles);
     displayLatest(allArticles);
-  } catch (error) {
+  } catch (error) {  
     console.error("Fetch error:", error);
     if (ticker) ticker.textContent = "Failed to load news. Please try again later.";
   }
